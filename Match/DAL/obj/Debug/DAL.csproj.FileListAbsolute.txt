@@ -1,0 +1,44 @@
+D:\ClassFiles\Web案例开发\Match\DAL\bin\Debug\DAL.dll
+D:\ClassFiles\Web案例开发\Match\DAL\bin\Debug\DAL.pdb
+D:\ClassFiles\Web案例开发\Match\DAL\obj\Debug\DAL.dll
+D:\ClassFiles\Web案例开发\Match\DAL\obj\Debug\DAL.pdb
+D:\ClassFiles\Web案例开发\Match\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web案例开发\Match\DAL\bin\Debug\Book.DBUtility.dll
+D:\ClassFiles\Web案例开发\Match\DAL\bin\Debug\MODEL.dll
+D:\ClassFiles\Web案例开发\Match\DAL\bin\Debug\System.Data.SQLite.dll
+D:\ClassFiles\Web案例开发\Match\DAL\bin\Debug\MySql.Data.dll
+D:\ClassFiles\Web案例开发\Match\DAL\bin\Debug\Book.DBUtility.pdb
+D:\ClassFiles\Web案例开发\Match\DAL\bin\Debug\MODEL.pdb
+D:\ClassFiles\Web\Match\DAL\bin\Debug\DAL.dll
+D:\ClassFiles\Web\Match\DAL\bin\Debug\DAL.pdb
+D:\ClassFiles\Web\Match\DAL\bin\Debug\Book.DBUtility.dll
+D:\ClassFiles\Web\Match\DAL\bin\Debug\MODEL.dll
+D:\ClassFiles\Web\Match\DAL\bin\Debug\System.Data.SQLite.dll
+D:\ClassFiles\Web\Match\DAL\bin\Debug\MySql.Data.dll
+D:\ClassFiles\Web\Match\DAL\bin\Debug\Book.DBUtility.pdb
+D:\ClassFiles\Web\Match\DAL\bin\Debug\MODEL.pdb
+D:\ClassFiles\Web\Match\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web\Match\DAL\obj\Debug\DAL.dll
+D:\ClassFiles\Web\Match\DAL\obj\Debug\DAL.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\bin\Debug\DAL.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\bin\Debug\DAL.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\bin\Debug\Book.DBUtility.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\bin\Debug\MODEL.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\bin\Debug\System.Data.SQLite.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\bin\Debug\MySql.Data.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\bin\Debug\Book.DBUtility.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\bin\Debug\MODEL.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\obj\Debug\DAL.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DAL\obj\Debug\DAL.pdb
+C:\Users\Administrator\Desktop\Match\DAL\bin\Debug\DAL.dll
+C:\Users\Administrator\Desktop\Match\DAL\bin\Debug\DAL.pdb
+C:\Users\Administrator\Desktop\Match\DAL\bin\Debug\Book.DBUtility.dll
+C:\Users\Administrator\Desktop\Match\DAL\bin\Debug\MODEL.dll
+C:\Users\Administrator\Desktop\Match\DAL\bin\Debug\System.Data.SQLite.dll
+C:\Users\Administrator\Desktop\Match\DAL\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Desktop\Match\DAL\bin\Debug\Book.DBUtility.pdb
+C:\Users\Administrator\Desktop\Match\DAL\bin\Debug\MODEL.pdb
+C:\Users\Administrator\Desktop\Match\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Match\DAL\obj\Debug\DAL.dll
+C:\Users\Administrator\Desktop\Match\DAL\obj\Debug\DAL.pdb

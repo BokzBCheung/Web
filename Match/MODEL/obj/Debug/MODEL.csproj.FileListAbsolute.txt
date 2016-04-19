@@ -1,0 +1,18 @@
+D:\ClassFiles\Web案例开发\Match\MODEL\bin\Debug\MODEL.dll
+D:\ClassFiles\Web案例开发\Match\MODEL\bin\Debug\MODEL.pdb
+D:\ClassFiles\Web案例开发\Match\MODEL\obj\Debug\MODEL.dll
+D:\ClassFiles\Web案例开发\Match\MODEL\obj\Debug\MODEL.pdb
+D:\ClassFiles\Web案例开发\Match\MODEL\obj\Debug\MODEL.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web\Match\MODEL\bin\Debug\MODEL.dll
+D:\ClassFiles\Web\Match\MODEL\bin\Debug\MODEL.pdb
+D:\ClassFiles\Web\Match\MODEL\obj\Debug\MODEL.dll
+D:\ClassFiles\Web\Match\MODEL\obj\Debug\MODEL.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\MODEL\bin\Debug\MODEL.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\MODEL\bin\Debug\MODEL.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\MODEL\obj\Debug\MODEL.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\MODEL\obj\Debug\MODEL.pdb
+C:\Users\Administrator\Desktop\Match\MODEL\bin\Debug\MODEL.dll
+C:\Users\Administrator\Desktop\Match\MODEL\bin\Debug\MODEL.pdb
+C:\Users\Administrator\Desktop\Match\MODEL\obj\Debug\MODEL.dll
+C:\Users\Administrator\Desktop\Match\MODEL\obj\Debug\MODEL.pdb
+C:\Users\Administrator\Desktop\Match\MODEL\obj\Debug\MODEL.csprojResolveAssemblyReference.cache

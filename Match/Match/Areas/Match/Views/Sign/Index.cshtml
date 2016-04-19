@@ -1,0 +1,88 @@
+﻿<h2 class="contentTitle">网上报名：</h2>
+<form action="/Match/Sign/AddSave?navTabId=masterList&callbackType=closeCurrent" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone)">
+    <div class="pageContent">
+        <div class="pageFormContent" layouth="97">
+
+            <dl class="nowrap">
+                <dt>比赛创建时间：</dt>
+                <dd>
+                    <input id="CreateTime" name="CreateName" value="" class="date" />
+                </dd>
+            </dl>
+            <dl class="nowrap">
+                <dt>比赛编号：</dt>
+                <dd>
+                    <input type="text" name="OrderNumber"/>
+                </dd>
+            </dl>
+
+            <dl class="nowrap">
+                <dt>选择比赛名称：</dt>
+                <dd>
+                    <input type="hidden" name="json.ID"/>
+                    <input class="required textInput valid"
+                        name="json.Name" type="text"
+                        suggestfields="Name"
+                        suggesturl="/Match/Sign/GetJson"
+                        warn="请选择供应商"
+                        lookupgroup="json" />
+                </dd>
+            </dl>
+            <div class="divider"></div>
+            <div class="divider"></div>
+            <h3 class="contentTitle">报名信息填写</h3>
+            <div class="tabs">
+                <div class="tabsHeader">
+                    <div class="tabsHeaderContent">
+                        <ul>
+                            <li class="selected"><a href="javascript:void(0)"><span>填写详情</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabsContent" style="height: 200px;">
+                    <div>
+                        <table class="list nowrap itemDetail" addbutton="添加条目" width="100%">
+                            <thead>
+                                <tr>
+                                    <th type="lookup" name="items[#index#].book.Name"
+                                        lookupgroup="items[#index#].book"
+                                        @*lookupurl="demo/database/dwzOrgLookup.html"*@
+                                        suggesturl="/Match/Sign/GetJsons"
+                                        suggestfields="Name"
+                                        postfield="keywords" size="12" fieldclass="required">姓名</th>
+                                    <th type="text" name="Person.ID" defaultval="5" size="12" fieldclass="digits">学号</th>
+                                    <th type="text" name="Person.Phone" defaultval="***********" size="12" fieldclass="number">电话</th>
+                                    <th type="text" name="Person.Mail" defaultval="123456@qq.com" size="12" fieldclass="digits">邮箱</th>
+                                    <th type="text" name="Person.Comments" defaultval="学生" size="12" fieldclass="number">备注</th>
+                                    @*<th type="date" name="items[#index#].itemDate" defaultval="2011-12-28" size="12">日期</th>*@
+                                    <th type="del" width="60">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tabsFooter">
+                    <div class="tabsFooterContent"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="formBar">
+            <ul>
+                <li>
+                    <div class="buttonActive">
+                        <div class="buttonContent">
+                            <button type="submit">保存</button></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
+                        <div class="buttonContent">
+                            <button class="close" type="button">关闭</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</form>

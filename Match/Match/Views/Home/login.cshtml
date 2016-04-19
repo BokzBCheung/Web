@@ -1,0 +1,215 @@
+﻿@{
+    ViewBag.Title = "login";
+}
+
+
+<!doctype html>
+<html>
+<head>
+		
+		
+		
+		<meta charset="utf-8">
+		<title>温州大学信息门户</title>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="all" name="robots" />
+		<meta name="author" content="作者信息" />
+		<meta name="Copyright" content="版权信息" />
+		<meta name="description" content="站点介绍" />
+		<meta name="keywords" content="站点关键词" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- <script language="javascript" src="http://rz.wzu.edu.cn:80/zfca/js/ukeylogin.js"></script> -->
+	@*	<script type='text/javascript' src='dwr/interface/UsermanAjax.js'></script>*@
+		@*<script type='text/javascript' src='dwr/engine.js'></script>*@
+@*<script type='text/javascript' src='dwr/util.js'></script>
+<script language="javascript" src="js/BatAjax.js"></script>*@
+
+		<link href="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/css/base.css" rel="stylesheet">
+		<script src="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/js/jquery-1.11.0.min.js"></script>
+		<script src="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/js/bootstrap.min.js"></script>
+		<!--[if lt IE 9]>
+			<script src="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/js/html5shiv.min.js"></script>
+			<script src="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body style="background:#fafafa;">
+			
+	<div class="container container_1170">
+		<div class="row sl_log_top margin-b20">
+			<div class="logo_1 col-sm-6"><img class="pull-left" src="http://rz.wzu.edu.cn:80/zfca/login/logo/logo_school.png" style="margin-top:-3px" />
+			<p class="pull-left col-md-6 col-sm-12 col-xs-12">统一身份认证中心</p>
+			</div>
+			<div class="col-xs-12 text-right visible-xs-block"><a href="#sm">登陆说明</a></div>
+		</div>
+	<div class="row sl_log_bor4"  style="background: #fff;">
+		<div class="col-sm-8 hidden-xs sl_log_lf"> <img class="img-responsive" src="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/img/login_bg_pic2.jpg" /> </div>
+		<div class="col-sm-4 sl_log_rt form-horizontal" style="padding: 15px;">
+		
+				<h5>用户登录</h5>
+			
+										<input type="hidden" name="lt" value="_cA3FA9952-74E8-E5BE-EDD2-3E2AD7061265_k235EFE46-DA70-B514-5500-F501F673856A" />
+							<input type="hidden" name="_eventId" value="submit" />
+			
+							
+				<p  id="msg"></p>
+				<p class="hide" id="msg_div"><span class="glyphicon glyphicon-minus-sign"></span>请输入用户名！</p>
+				<p  class="hide" id="msg_div1"><span class="glyphicon glyphicon-minus-sign"></span>请输入密码！</p>
+				<div class="form-group">
+					<div class="input-group">
+						<div class="input-group-addon"><img src="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/images/log_ic01.png" width="16" height="16"/></div>
+					
+			
+								<input id="username" name="username" class="form-control" tabindex="1"  accesskey="n" type="text" value="" autocomplete="false"/>
+							
+					
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+						<div class="input-group-addon"><img src="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/images/log_ic02.png" width="16" height="16"/></div>
+					
+									<input id="password" name="password" class="form-control" tabindex="2"   accesskey="p" type="password" value="" autocomplete="off"/>
+
+
+						
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<font id="rufont" style="font:100 12px tahoma, Arial, "宋体"; PADDING-TOP: 0px;">
+									<input type="checkbox" name="rememberUser" id="rememberUser"
+										value="true" tabindex="5" onclick="rememberUserCheck(this)" />
+									记住密码&nbsp;&nbsp;&nbsp;&nbsp;
+								</font>
+                                <font id="rmfont" style="font:100 12px tahoma, Arial, "宋体"; PADDING-TOP: 0px">
+	                                <input type="checkbox" name="rememberMe" id="rememberMe"
+										value="true" tabindex="5" />
+									自动登录<!--两周内不用再登录-->
+								</font>
+				</div>
+				<div class="form-group">
+						 <a href="/zfca/retakeusername.do" class="checkbox pull-left" target="_blank">找回用户名？</a> 
+						<a href="/zfca/securitycenter/findpwd/recoverpasswd.jsp" class="checkbox pull-right" target="_blank">找回密码？</a>
+							 </div>
+					
+				<div class="form-group">
+					<button id="submit"  class="btn btn-primary btn-block">登 录</button>
+				</div>
+						<div class="form-group">	<a href='http://mail.wzu.edu.cn/coremail/index_bm.jsp' class="checkbox pull-right" target="_blank">部门邮箱登录请点击这里>></a>	</div>
+			<div class="login_notice" id="jzw" style="display:none">
+                        	<p style="padding-left: 70px">
+								<font id="rufont" style="font:100 12px tahoma, Arial, "宋体"; PADDING-TOP: 0px;">
+									<input type="checkbox" name="rememberUser" id="rememberUser"
+										value="true" tabindex="5" onclick="rememberUserCheck(this)" />
+									记住密码&nbsp;&nbsp;&nbsp;&nbsp;
+								</font>
+                                <font id="rmfont" style="font:100 12px tahoma, Arial, "宋体"; PADDING-TOP: 0px">
+	                                <input type="checkbox" name="rememberMe" id="rememberMe"
+										value="true" tabindex="5" />
+									自动登录<!--两周内不用再登录-->
+								</font>
+							</p>
+						</div>	
+		</div>
+	</div>
+	<div class="row login-about">
+	
+		<div class="col-md-4 col-sm-12">
+			<div class="media">
+			  <a class="pull-left"  name="sm">
+		        <img class="media-object" data-src="holder.js/90x90" alt="90x90" src="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/img/login-about-1.png" style="width: 90px; height: 90px;">
+		      </a>
+			  <div class="media-body">
+			    <h4 class="media-heading">平台介绍</h4>
+			   为进一步提升数字化校园应用体验，使用统一的帐号和密码登录统一身份认证系统，实现一次登录，全网通行。
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<div class="media">
+			  <a class="pull-left" href="#">
+		        <img class="media-object" data-src="holder.js/90x90" alt="90x90" src="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/img/login-about-2.png" style="width: 90px; height: 90px;">
+		      </a>
+			  <div class="media-body">
+			    <h4 class="media-heading">登录提示</h4>
+			   学生帐名为学号，教职工帐名为工号。学生教工初始密码为身份证号码后6位，字母均为大写。
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<div class="media">
+			  <a class="pull-left" href="#">
+		        <img class="media-object" data-src="holder.js/90x90" alt="90x90" src="http://rz.wzu.edu.cn:80/zfca/login/zfstyle_v5/img/login-about-3.png" style="width: 90px; height: 90px;">
+		      </a>
+			  <div class="media-body">
+			    <h4 class="media-heading">温馨提示</h4>
+			   为保障您的密码安全，请及时修改您的密保问题和密保邮箱，具体操作请详见<a href="http://rz.wzu.edu.cn:80/zfca//login/czsc.doc" target="_blank">操作手册下载</a> 。咨询电话：0577-86596097
+			  </div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- <div class="sl_log_ewm hidden-xs"><img src="../../img/login_ewm.gif" width="90" height="90"/>&nbsp;&nbsp;<span>用手机扫一扫,<br />安全、便捷登陆</span></div> -->
+
+</div>
+
+<div class="footer"style="margin-top: 60px;">
+	<p>Copyright &copy;2008-2011 <span> Wenzhou University All Rights Reserved.<br> 地址：温州高教园区 电话：+86-0577-86596097 </br>技术支持: &copy;1999-2012 <a href="http://www.zfsoft.com" target="_blank" class="zf">正方软件股份有限公司</a> <a	class="ver" href="#" class="zf">Ver 3.1.5</a></p>
+</div>
+
+
+	<div class="sxsj" style="display: none">
+							<label for="">
+								失效时间：
+							</label>
+							<input id="losetime" name="losetime" tabindex="4" type="text" value=""/>
+							分钟
+						</div>
+
+			<script type="text/javascript">				
+			    $("#submit").click(function () {
+			        var username = $("#username").val().trim();
+			        var password = $("#password").val().trim();
+			        if (username == "") { $("#msg_div").attr("class", "show"); return } else { $("#msg_div").attr("class", "hide"); }
+			        if (password == "") { $("#msg_div1").attr("class", "show"); return } else { $("#msg_div1").attr("class", "hide"); }
+
+			        $.ajax({
+			            url: "/Home/btnLogin",
+			            type: "POST",
+			            data: { playerID: username, password: password },
+			            dataType: "json",
+			            success: function (result) {
+			                if (result.code == 0) {
+			                    noty({ text: result.msg, type: "warning", layout: "topCenter", timeout: 1500 });
+			                }
+			                else {
+			                    var returnUrl = getQueryString("ReturnUrl");
+			                    if (returnUrl == null) {
+			                        window.location.href = "/Home/Index";
+			                    }
+			                    else {
+			                        window.location.href = returnUrl;
+			                    }
+			                }
+			            },
+			            error: function () {
+
+			            }
+			        });
+			    })
+			    function getQueryString(name) {
+			        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+			        var r = window.location.search.substr(1).match(reg);
+			        if (r != null)
+			            return unescape(r[2]);
+			        return null;
+			    }
+
+ </script>
+	</body>
+</html>

@@ -1,0 +1,99 @@
+﻿@{
+    Layout = null;
+}  
+
+<style type="text/css">
+	ul.rightTools {float:right; display:block;}
+	ul.rightTools li{float:left; display:block; margin-left:5px}
+</style>
+
+<div class="pageContent" style="padding:5px;">
+
+    <div class="panel" defH="40">
+		<h1>当前操作者详情</h1>
+		<div>
+			用户姓名：<input type="text"  readonly="true" name="patientNo" value="超级管理员" style="text-align:center"/>
+            管理权限：<input type="text"  readonly="true" name="patientNo" value="管理所有人员的增删改" style="text-align:center"/>
+            <span style="position:relative;left:20px;"> 用户头像：<input type="image" src="~/Content/OwnImg/Header.png" name="imgUser" value="用户头像"style="position:relative;top:10px;" width="30" height="30" /></span>
+            
+			@*<ul class="rightTools">
+				<li><a class="button" target="dialog" href="/Match/User/List" mask="true"><span>创建病例</span></a></li>
+				<li><div class="buttonDisabled"><div class="buttonContent"><button>病人治疗流程</button></div></div></li>
+				<li><div class="buttonDisabled"><div class="buttonContent"><button>按病人编号检索病例</button></div></div></li>
+				<li><div class="buttonDisabled"><div class="buttonContent"><button>从病人列表选取病例</button></div></div></li>
+                <br />
+                <li>
+                    <div class="buttonActive">
+                        <div class="buttonContent">
+                            <button type="submit">检索</button>
+                        </div>
+                    </div>
+                </li>
+			</ul>*@
+		</div>
+	</div>
+	<div class="divider"></div>
+	<div class="tabs">
+		<div class="tabsHeader">
+			<div class="tabsHeaderContent">
+				<ul>
+					<li><a href="javascript:;"><span>教师</span></a></li>
+					<li><a href="javascript:;"><span>学生</span></a></li>
+                    <li><a href="/Match/User/AList" target="ajax" rel="jbsxBox3"><span>管理员</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="tabsContent">
+			<div>
+				<div layoutH="146" style="float:left; display:block; overflow:auto; width:240px; border:solid 1px #CCC; line-height:21px; background:#fff">
+				    <ul class="tree treeFolder">
+						<li><a href="javascript">竞赛指导老师</a>
+							<ul>
+								<li><a href="/Match/User/TList" target="ajax" rel="jbsxBox">讲师</a></li>
+								<li><a href="/Match/User/TList" target="ajax" rel="jbsxBox">教授</a></li>
+								<li><a href="/Match/User/TList" target="ajax" rel="jbsxBox">副教授</a></li>
+							</ul>
+						</li>						
+				     </ul>
+				</div>				
+				<div id="jbsxBox" class="unitBox" style="margin-left:246px;">
+					<!--#include virtual="list1.html" -->
+				</div>
+			</div>
+
+            <div>
+                <div layouth="146" style="float: left; display: block; overflow: auto; width: 240px; border: solid 1px #CCC; line-height: 21px; background: #fff">
+                    <ul class="tree treeFolder">
+                        <li><a href="javascript">在校学生</a>
+                            <ul>
+                                <li><a href="/Match/User/SList" target="ajax" rel="jbsxBox2">13级</a></li>
+                                <li><a href="/Match/User/SList" target="ajax" rel="jbsxBox2">14级</a></li>
+                                <li><a href="/Match/User/SList" target="ajax" rel="jbsxBox2">15级</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <div id="jbsxBox2" class="unitBox" style="margin-left: 246px;">
+                    <!--#include virtual="list1.html" -->
+                </div>
+            </div>
+			
+            <div>
+                <div id="jbsxBox3" class="unitBox">
+                    <!--#include virtual="list1.html" -->
+                </div>
+            </div>
+			
+		</div>
+		<div class="tabsFooter">
+			<div class="tabsFooterContent"></div>
+		</div>
+	</div>
+	
+</div>
+
+
+	
+
+

@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="pageContent">
+	<form method="post" action="/Match/User/AddAdminSave" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+		<div class="pageFormContent" layoutH="56">
+			<p>
+				<label>登陆名称：</label>
+				<input name="Name" type="text" size="30" value="" class="required"  alt="请输入登录名称"/>           
+			</p>
+            <p>
+                <label>密码：</label>
+                <input name="Pwd" class="required" type="password" size="30" value="" alt="请输入密码" />
+            </p>
+			<p>
+				<label>电话：</label>
+				<input name="Phone" class="required" type="text" size="30" value="" alt="请输入电话"/>
+                <input name="LastLoginTime" class="required" type="hidden" size="30" value="@System.DateTime.Now" alt="请输入最后登录时间"/>
+			</p>
+        @*    <p>
+				<label>账户状态：</label>
+				<input name="Status" class="required" type="text" size="30" value="50" alt="请输入"/>
+				<select name="Status" class="required combox">
+					<option value="1" selected="selected">正常</option>
+					<option value="2">冻结</option>
+                    <option value="3">删除</option>
+				</select>
+			</p>*@
+			
+		</div>
+		<div class="formBar">
+			<ul>
+				<!--<li><a class="buttonActive" href="javascript:;"><span>保存</span></a></li>-->
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>
+				<li>
+					<div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div>
+				</li>
+			</ul>
+		</div>
+	</form>
+</div>
+

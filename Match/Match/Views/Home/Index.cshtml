@@ -1,0 +1,327 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>学科竞赛后台管理</title>
+
+    <link href="/content/j-ui/themes/default/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/content/j-ui/themes/css/core.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/content/j-ui/themes/css/print.css" rel="stylesheet" type="text/css" media="print" />
+    <link href="/content/j-ui/uploadify/css/uploadify.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--[if IE]>
+<link href="/content/j-ui/themes/css/ieHack.css" rel="stylesheet" type="text/css" media="screen"/>
+<![endif]-->
+
+    <!--[if lte IE 9]>
+<script src="/content/j-ui/js/speedup./content/j-ui/js" type="text/javascript"></script>
+<![endif]-->
+
+    <script src="/content/j-ui/js/jquery-1.7.2.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/jquery.validate.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/jquery.bgiframe.js" type="text/javascript"></script>
+    <script src="/content/j-ui/xheditor/xheditor-1.2.1.min.js" type="text/javascript"></script>
+    <script src="/content/j-ui/xheditor/xheditor_lang/zh-cn.js" type="text/javascript"></script>
+    <script src="/content/j-ui/uploadify/scripts/jquery.uploadify.js" type="text/javascript"></script>
+
+    <!-- svg图表  supports Firefox 3.0+, Safari 3.0+, Chrome 5.0+, Opera 9.5+ and Internet Explorer 6.0+ -->
+    <script type="text/javascript" src="/content/j-ui/chart/raphael.js"></script>
+    <script type="text/javascript" src="/content/j-ui/chart/g.raphael.js"></script>
+    <script type="text/javascript" src="/content/j-ui/chart/g.bar.js"></script>
+    <script type="text/javascript" src="/content/j-ui/chart/g.line.js"></script>
+    <script type="text/javascript" src="/content/j-ui/chart/g.pie.js"></script>
+    <script type="text/javascript" src="/content/j-ui/chart/g.dot.js"></script>
+
+    <script src="/content/j-ui/js/dwz.core.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.util.date.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.validate.method.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.regional.zh.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.barDrag.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.drag.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.tree.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.accordion.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.ui.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.theme.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.switchEnv.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.alertMsg.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.contextmenu.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.navTab.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.tab.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.resize.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.dialog.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.dialogDrag.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.sortDrag.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.cssTable.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.stable.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.taskBar.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.ajax.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.pagination.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.database.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.datepicker.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.effects.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.panel.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.checkbox.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.history.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.combox.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.print.js" type="text/javascript"></script>
+    <!--
+<script src="bin/dwz.min./content/j-ui/js" type="text/javascript"></script>
+-->
+    <script src="/content/j-ui/js/dwz.regional.zh.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            DWZ.init("/content/dwz.frag.xml", {
+                loginUrl: "login_dialog.html", loginTitle: "登录",	// 弹出登录对话框
+                //		loginUrl:"login.html",	// 跳到登录页面
+                statusCode: { ok: 200, error: 300, timeout: 301 }, //【可选】
+                pageInfo: { pageNum: "pageNum", numPerPage: "numPerPage", orderField: "orderField", orderDirection: "orderDirection" }, //【可选】
+                debug: false,	// 调试模式 【true|false】
+                callback: function () {
+                    initEnv();
+                    $("#themeList").theme({ themeBase: "/content/j-ui/themes" }); // themeBase 相对于index页面的主题base路径
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body scroll="no">
+    <div id="layout">
+        <div id="header">
+            <div class="headerNav">
+                <div style="width: 100%; position: relative; text-align: center; font-family: 'Microsoft YaHei'; font-size: 25px; color: white; line-height: 50px;">学科竞赛管理系统</div>
+                <ul class="nav">
+                    <li><a href="/Dic/User/AddUser" target="dialog" width="600">修改密码</a></li>
+                    <li><a href="login.html">退出</a></li>
+                </ul>
+                <ul class="themeList" id="themeList">
+                    <li theme="default">
+                        <div class="selected">蓝色</div>
+                    </li>
+                    <li theme="green">
+                        <div>绿色</div>
+                    </li>
+                    <!--<li theme="red"><div>红色</div></li>-->
+                    <li theme="purple">
+                        <div>紫色</div>
+                    </li>
+                    <li theme="silver">
+                        <div>银色</div>
+                    </li>
+                    <li theme="azure">
+                        <div>天蓝</div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- navMenu -->
+
+        </div>
+
+        <div id="leftside">
+            <div id="sidebar_s">
+                <div class="collapse">
+                    <div class="toggleCollapse">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="toggleCollapse">
+                    <h2>主菜单</h2>
+                    <div>收缩</div>
+                </div>
+
+                <div class="accordion" fillspace="sidebar">
+                    <div class="accordionHeader">
+                        <h2><span>Folder</span>竞赛信息</h2>
+                    </div>
+                    <div class="accordionContent">
+                        <ul class="tree treeFolder">
+                            <li><a href="/Match/MatDetail/Index" target="navTab" rel="CompetitonList" fresh="true">竞赛详情</a></li>
+                            <li><a href="/Match/Sign/Index" target="navTab" rel="ApplyList" fresh="true">网上报名</a></li>
+                            <li><a href="/Match/User/Index" target="navTab" rel="UserList" fresh="true">用户信息</a></li>
+                            <li><a href="/DIC/User/List" target="navTab" rel="" fresh="true">比赛信息</a></li>
+                        </ul>
+                    </div>
+                    <div class="accordionHeader">
+                        <h2><span>Folder</span>往期比赛</h2>
+                    </div>
+                    <div class="accordionContent">
+                        <ul class="tree treeFolder @*treeCheck*@">
+                           <li><a href="Dictionary/BookIfo" target="dialog" rel="dlg_page">比赛信息</a>
+                                <ul>
+                                    <li><a href="javascript:;">比赛具体信息</a></li>
+                                    <li><a href="javascript:;">获奖情况</a></li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                    <div class="accordionHeader">
+                        <h2><span>Folder</span>当前比赛</h2>
+                    </div>
+                    <div class="accordionContent">
+                        <ul class="tree treeFolder">
+                            <li><a href="Dictionary/BookIfo" target="dialog" rel="dlg_page">正在比赛</a>
+                                <ul>
+                                    <li><a href="javascript:;">院级</a></li>
+                                    <li><a href="javascript:;">校级</a></li>
+                                     <li><a href="javascript:;">省级</a></li>
+                                     <li><a href="javascript:;">国家级</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="navTab" class="tabsPage">
+                <div class="tabsPageHeader">
+                    <div class="tabsPageHeaderContent">
+                        <!-- 显示左右控制时添加 class="tabsPageHeaderMargin" -->
+                        <ul class="navTab-tab">
+                            <li tabid="main" class="main"><a href="javascript:;"><span><span class="home_icon">我的主页</span></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="tabsLeft">left</div>
+                    <!-- 禁用只需要添加一个样式 class="tabsLeft tabsLeftDisabled" -->
+                    <div class="tabsRight">right</div>
+                    <!-- 禁用只需要添加一个样式 class="tabsRight tabsRightDisabled" -->
+                    <div class="tabsMore">more</div>
+                </div>
+                <ul class="tabsMoreList">
+                    <li><a href="javascript:;">我的主页</a></li>
+                </ul>
+                <div class="navTab-panel tabsPageContent layoutBox">
+                    <div class="page unitBox">
+                        <div class="accountInfo">
+                            <h2 style="text-align: center; padding-top: 20px;">欢迎您进入学科竞赛后台管理系统</h2>
+                        </div>
+                        <div class="pageFormContent" width="100%">
+                            @*<img src="~/Content/themes/img/BackGround.gif" width="100%" height="500px;" />*@
+                            <script type="text/javascript">
+                                var options = {
+                                    axis: "0 0 1 1", // Where to put the labels (trbl)
+                                    axisxstep: 6, // How many x interval labels to render (axisystep does the same for the y axis)
+                                    axisxlables: ['编程大赛', '创意大赛', '科技竞赛', '航模竞赛', '科普竞赛', 'idea大赛', 'Others'],
+                                    axisystep: 20,
+                                    shade: false, // true, false
+                                    smooth: true, //曲线
+                                    symbol: "circle"
+                                };
+
+                                $(function () {
+
+                                    // Make the raphael object
+                                    var r = Raphael("chartHolder");
+
+                                    var lines = r.linechart(
+                                        20, // X start in pixels
+                                        20, // Y start in pixels
+                                        600, // Width of chart in pixels
+                                        400, // Height of chart in pixels
+                                        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], // Array of x coordinates equal in length to ycoords
+                                        [[584, 535, 406, 254, 171, 47, 24, 58, 104, 255, 396, 564], [100, 20, 300, 400, 300, 582, 70, 50, 90, 100, 110, 120]], // Array of y coordinates equal in length to xcoords
+                                        options // opts object
+                                    ).hoverColumn(function () {
+                                        this.tags = r.set();
+
+                                        var box_x = this.x, box_y = 30,
+                                            box_w = 100, box_h = 80;
+                                        if (box_x + box_w > r.width) box_x -= box_w;
+                                        var box = r.rect(box_x, box_y, box_w, box_h).attr({ stroke: "#f00", "stroke-width": 1, r: 5 });
+                                        this.tags.push(box);
+
+                                        for (var i = 0; i < this.y.length; i++) {
+                                            //this.tags.push(r.blob(this.x, this.y[i], "$"+this.values[i]).insertBefore(this).attr([{ fill: "#ffa500", stroke: "#000"}, { fill: this.symbols[i].attr("fill") }]));
+                                            var t = r.text(box_x + 20, box_y + 10 + i * 16, "$" + this.values[i]).attr({ fill: this.symbols[i].attr("fill") })
+                                            this.tags.push(t);
+                                        }
+
+
+                                    }, function () {
+                                        this.tags && this.tags.remove();
+                                    });
+
+                                    lines.symbols.attr({ r: 6 });
+                                });
+                            </script>
+
+                            <div id="chartHolder" style="width: 650px;height: 450px;margin:0 auto;"></div>
+                            @*饼图展示*@
+                            <script type="text/javascript" charset="utf-8">
+                                /* Title settings */
+                                title = "近期参与人数一览";
+                                titleXpos = 390;
+                                titleYpos = 85;
+
+                                /* Pie Data */
+                                pieRadius = 130;
+                                pieXpos = 150;
+                                pieYpos = 180;
+                                pieData = [1149422, 551315, 172095, 166565, 53329, 18060, 8074, 1941, 1393, 1104, 2110];
+                                pieLegend = [
+                                "%%.%% – 编程大赛",
+                                "%%.%% – 创意大赛",
+                                "%%.%% – 科技竞赛",
+                                "%%.%% – 航模竞赛",
+                                "%%.%% – 科普竞赛",
+                                "%%.%% – idea大赛",
+                                "%%.%% – Other"];
+
+                                pieLegendPos = "east";
+
+                                $(function () {
+                                    var r = Raphael("chartHolder");
+
+                                    r.text(titleXpos, titleYpos, title).attr({ "font-size": 20 });
+
+                                    var pie = r.piechart(pieXpos, pieYpos, pieRadius, pieData, { legend: pieLegend, legendpos: pieLegendPos });
+                                    pie.hover(function () {
+                                        this.sector.stop();
+                                        this.sector.scale(1.1, 1.1, this.cx, this.cy);
+                                        if (this.label) {
+                                            this.label[0].stop();
+                                            this.label[0].attr({ r: 7.5 });
+                                            this.label[1].attr({ "font-weight": 800 });
+                                        }
+                                    }, function () {
+                                        this.sector.animate({ transform: 's1 1 ' + this.cx + ' ' + this.cy }, 500, "bounce");
+                                        if (this.label) {
+                                            this.label[0].animate({ r: 5 }, 500, "bounce");
+                                            this.label[1].attr({ "font-weight": 400 });
+                                        }
+                                    });
+
+                                });
+                            </script>
+                            <div id="chartHolder" style="width:600px;"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">Copyright &copy; 2010 <a href="demo_page2.html" target="dialog">Capricornus团队</a> 京ICP备05019125号-10</div>
+
+    <!-- 注意此处/content/j-ui/js代码用于google站点统计，非DWZ代码，请删除 -->
+    @*<script src="~/Scripts/jquery-1.7.1.min.js"></script>*@
+    <script type="text/javascript">
+
+  
+    </script>
+
+</body>
+</html>

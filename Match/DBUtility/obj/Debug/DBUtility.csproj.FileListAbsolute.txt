@@ -1,0 +1,40 @@
+D:\yexf\13jb\DBUtility\bin\Debug\Book.DBUtility.dll
+D:\yexf\13jb\DBUtility\bin\Debug\Book.DBUtility.pdb
+D:\yexf\13jb\DBUtility\bin\Debug\MySql.Data.dll
+D:\yexf\13jb\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\yexf\13jb\DBUtility\obj\Debug\Book.DBUtility.dll
+D:\yexf\13jb\DBUtility\obj\Debug\Book.DBUtility.pdb
+D:\ClassFiles\Web案例开发\Class02\DBUtility\bin\Debug\Book.DBUtility.dll
+D:\ClassFiles\Web案例开发\Class02\DBUtility\bin\Debug\Book.DBUtility.pdb
+D:\ClassFiles\Web案例开发\Class02\DBUtility\bin\Debug\MySql.Data.dll
+D:\ClassFiles\Web案例开发\Class02\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\ClassFiles\Web案例开发\Class02\DBUtility\obj\Debug\Book.DBUtility.dll
+D:\ClassFiles\Web案例开发\Class02\DBUtility\obj\Debug\Book.DBUtility.pdb
+D:\ClassFiles\Web案例开发\Class02\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web案例开发\Match\DBUtility\bin\Debug\Book.DBUtility.dll
+D:\ClassFiles\Web案例开发\Match\DBUtility\bin\Debug\Book.DBUtility.pdb
+D:\ClassFiles\Web案例开发\Match\DBUtility\bin\Debug\MySql.Data.dll
+D:\ClassFiles\Web案例开发\Match\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\ClassFiles\Web案例开发\Match\DBUtility\obj\Debug\Book.DBUtility.dll
+D:\ClassFiles\Web案例开发\Match\DBUtility\obj\Debug\Book.DBUtility.pdb
+D:\ClassFiles\Web案例开发\Match\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web\Match\DBUtility\bin\Debug\Book.DBUtility.dll
+D:\ClassFiles\Web\Match\DBUtility\bin\Debug\Book.DBUtility.pdb
+D:\ClassFiles\Web\Match\DBUtility\bin\Debug\MySql.Data.dll
+D:\ClassFiles\Web\Match\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\ClassFiles\Web\Match\DBUtility\obj\Debug\Book.DBUtility.dll
+D:\ClassFiles\Web\Match\DBUtility\obj\Debug\Book.DBUtility.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DBUtility\bin\Debug\Book.DBUtility.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DBUtility\bin\Debug\Book.DBUtility.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DBUtility\bin\Debug\MySql.Data.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DBUtility\obj\Debug\Book.DBUtility.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\DBUtility\obj\Debug\Book.DBUtility.pdb
+C:\Users\Administrator\Desktop\Match\DBUtility\bin\Debug\Book.DBUtility.dll
+C:\Users\Administrator\Desktop\Match\DBUtility\bin\Debug\Book.DBUtility.pdb
+C:\Users\Administrator\Desktop\Match\DBUtility\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Desktop\Match\DBUtility\bin\Debug\System.Data.SQLite.DLL
+C:\Users\Administrator\Desktop\Match\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Match\DBUtility\obj\Debug\Book.DBUtility.dll
+C:\Users\Administrator\Desktop\Match\DBUtility\obj\Debug\Book.DBUtility.pdb

@@ -1,0 +1,183 @@
+D:\ClassFiles\Web案例开发\Match\Match\bin\Match.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\Match.pdb
+D:\ClassFiles\Web案例开发\Match\Match\bin\Microsoft.Web.Infrastructure.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\Newtonsoft.Json.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Net.Http.Formatting.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.Helpers.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.Http.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.Http.WebHost.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.Mvc.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.Razor.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.WebPages.Deployment.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.WebPages.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.WebPages.Razor.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\Newtonsoft.Json.xml
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Net.Http.Formatting.xml
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.Helpers.xml
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.Http.xml
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.Http.WebHost.xml
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.Mvc.xml
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.Razor.xml
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.WebPages.xml
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.WebPages.Deployment.xml
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Web.WebPages.Razor.xml
+D:\ClassFiles\Web案例开发\Match\Match\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\zh-Hans\System.Web.Http.resources.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\ClassFiles\Web案例开发\Match\Match\obj\Debug\Match.dll
+D:\ClassFiles\Web案例开发\Match\Match\obj\Debug\Match.pdb
+D:\ClassFiles\Web案例开发\Match\Match\bin\BLL.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\DAL.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\MODEL.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\Maticsoft.Common.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\Book.DBUtility.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\System.Data.SQLite.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\MySql.Data.dll
+D:\ClassFiles\Web案例开发\Match\Match\bin\BLL.pdb
+D:\ClassFiles\Web案例开发\Match\Match\bin\DAL.pdb
+D:\ClassFiles\Web案例开发\Match\Match\bin\MODEL.pdb
+D:\ClassFiles\Web案例开发\Match\Match\bin\Book.DBUtility.pdb
+D:\ClassFiles\Web案例开发\Match\Match\obj\Debug\Match.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web\Match\Match\bin\Match.dll
+D:\ClassFiles\Web\Match\Match\bin\Match.pdb
+D:\ClassFiles\Web\Match\Match\bin\BLL.dll
+D:\ClassFiles\Web\Match\Match\bin\DAL.dll
+D:\ClassFiles\Web\Match\Match\bin\Microsoft.Web.Infrastructure.dll
+D:\ClassFiles\Web\Match\Match\bin\MODEL.dll
+D:\ClassFiles\Web\Match\Match\bin\System.Net.Http.Formatting.dll
+D:\ClassFiles\Web\Match\Match\bin\System.Web.Helpers.dll
+D:\ClassFiles\Web\Match\Match\bin\System.Web.Http.dll
+D:\ClassFiles\Web\Match\Match\bin\System.Web.Http.WebHost.dll
+D:\ClassFiles\Web\Match\Match\bin\System.Web.Mvc.dll
+D:\ClassFiles\Web\Match\Match\bin\System.Web.Razor.dll
+D:\ClassFiles\Web\Match\Match\bin\System.Web.WebPages.Deployment.dll
+D:\ClassFiles\Web\Match\Match\bin\System.Web.WebPages.dll
+D:\ClassFiles\Web\Match\Match\bin\System.Web.WebPages.Razor.dll
+D:\ClassFiles\Web\Match\Match\bin\Maticsoft.Common.dll
+D:\ClassFiles\Web\Match\Match\bin\Book.DBUtility.dll
+D:\ClassFiles\Web\Match\Match\bin\System.Data.SQLite.dll
+D:\ClassFiles\Web\Match\Match\bin\MySql.Data.dll
+D:\ClassFiles\Web\Match\Match\bin\BLL.pdb
+D:\ClassFiles\Web\Match\Match\bin\DAL.pdb
+D:\ClassFiles\Web\Match\Match\bin\MODEL.pdb
+D:\ClassFiles\Web\Match\Match\bin\Microsoft.Web.Infrastructure.xml
+D:\ClassFiles\Web\Match\Match\bin\System.Net.Http.Formatting.xml
+D:\ClassFiles\Web\Match\Match\bin\System.Web.Helpers.xml
+D:\ClassFiles\Web\Match\Match\bin\System.Web.Http.xml
+D:\ClassFiles\Web\Match\Match\bin\System.Web.Http.WebHost.xml
+D:\ClassFiles\Web\Match\Match\bin\System.Web.Mvc.xml
+D:\ClassFiles\Web\Match\Match\bin\System.Web.Razor.xml
+D:\ClassFiles\Web\Match\Match\bin\System.Web.WebPages.xml
+D:\ClassFiles\Web\Match\Match\bin\System.Web.WebPages.Deployment.xml
+D:\ClassFiles\Web\Match\Match\bin\System.Web.WebPages.Razor.xml
+D:\ClassFiles\Web\Match\Match\bin\Book.DBUtility.pdb
+D:\ClassFiles\Web\Match\Match\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\ClassFiles\Web\Match\Match\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\ClassFiles\Web\Match\Match\bin\zh-Hans\System.Web.Http.resources.dll
+D:\ClassFiles\Web\Match\Match\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\ClassFiles\Web\Match\Match\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\ClassFiles\Web\Match\Match\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\ClassFiles\Web\Match\Match\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\ClassFiles\Web\Match\Match\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\ClassFiles\Web\Match\Match\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\ClassFiles\Web\Match\Match\obj\Debug\Match.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web\Match\Match\obj\Debug\Match.dll
+D:\ClassFiles\Web\Match\Match\obj\Debug\Match.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\obj\Debug\Match.csprojResolveAssemblyReference.cache
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\obj\Debug\Match.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\Match.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\Match.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\BLL.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\DAL.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\Microsoft.Web.Infrastructure.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\MODEL.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\Newtonsoft.Json.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Net.Http.Formatting.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.Helpers.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.Http.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.Http.WebHost.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.Mvc.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.Razor.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.WebPages.Deployment.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.WebPages.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.WebPages.Razor.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\Maticsoft.Common.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\Book.DBUtility.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Data.SQLite.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\MySql.Data.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\BLL.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\DAL.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\MODEL.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\Newtonsoft.Json.xml
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Net.Http.Formatting.xml
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.Helpers.xml
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.Http.xml
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.Http.WebHost.xml
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.Mvc.xml
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.Razor.xml
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.WebPages.xml
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.WebPages.Deployment.xml
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\System.Web.WebPages.Razor.xml
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\Book.DBUtility.pdb
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\zh-Hans\System.Web.Http.resources.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Documents\Tencent Files\1115206778\FileRecv\Match\Match\obj\Debug\Match.pdb
+C:\Users\Administrator\Desktop\Match\Match\bin\Match.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\Match.pdb
+C:\Users\Administrator\Desktop\Match\Match\bin\BLL.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\DAL.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\MODEL.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\Maticsoft.Common.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\Book.DBUtility.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Data.SQLite.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\MySql.Data.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\BLL.pdb
+C:\Users\Administrator\Desktop\Match\Match\bin\DAL.pdb
+C:\Users\Administrator\Desktop\Match\Match\bin\MODEL.pdb
+C:\Users\Administrator\Desktop\Match\Match\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\Match\Match\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\Match\Match\bin\Book.DBUtility.pdb
+C:\Users\Administrator\Desktop\Match\Match\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\Match\Match\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator\Desktop\Match\Match\obj\Debug\Match.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Match\Match\obj\Debug\Match.dll
+C:\Users\Administrator\Desktop\Match\Match\obj\Debug\Match.pdb
