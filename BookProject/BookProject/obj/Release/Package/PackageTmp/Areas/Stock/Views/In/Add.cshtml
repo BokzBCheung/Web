@@ -1,0 +1,161 @@
+﻿<h2 class="contentTitle">入库录入信息添加：</h2>
+<form action="/Stock/In/AddSave?navTabId=masterList&callbackType=closeCurrent" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone)">
+    <div class="pageContent">
+       <div class="pageFormContent" layouth="97">
+
+            <dl class="nowrap">
+                <dt>入库单据创建时间：</dt>
+                <dd>
+                    <input id="CreateTime" name="CreateName" value="" class="date" />
+                </dd>
+            </dl>
+            <dl class="nowrap">
+                <dt>关联单据编号：</dt>
+                <dd>
+                    <input type="text" name="OrderNumber"/>
+                </dd>
+            </dl>
+
+            <dl class="nowrap">
+                <dt>选择供应商：</dt>
+                <dd>
+                    <input type="hidden" name="json.ID"/>
+                    <input class="required textInput valid"
+                        name="json.Name" type="text"
+                        suggestfields="Name"
+                        suggesturl="/Stock/In/getjson"
+                        warn="请选择供应商"
+                        lookupgroup="json" />
+                </dd>
+            </dl>
+            <div class="divider"></div>
+
+            @*		<dl class="nowrap">
+			<dt>部门名称B：</dt>
+			<dd>
+				<input name="org2.id" value="" type="hidden">
+				<input class="required" name="org2.orgName" type="text" suggestFields="orgName" suggestUrl="demo/database/db_lookupSuggest.html" lookupGroup="org2"/>
+				<span class="info">(suggest)</span>
+			</dd>
+		</dl>
+		
+		<div class="divider"></div>
+
+		<dl class="nowrap">
+			<dt>部门名称C：</dt>
+			<dd>
+				<input name="org3.id" value="" type="hidden">
+				<input name="org3.orgName" type="text"/>
+				<a class="btnLook" href="demo/database/dwzOrgLookup2.html" lookupGroup="org3">查找带回</a>
+				<span class="info">(lookup 通过复选框选择多个值查找回带)</span>
+			</dd>
+		</dl>
+		<dl class="nowrap">
+			<dt>部门编号C：</dt>
+			<dd>
+				<input class="readonly" name="org3.orgNum" readonly="readonly" type="text"/>
+			</dd>
+		</dl>
+
+		<div class="divider"></div>
+		<dl class="nowrap">
+			<dt>部门（结尾带下标）：</dt>
+			<dd>
+				<input name="org.id[]" value="1" type="hidden"/>
+				<input class="required" name="org.orgName[]" value="技术部" type="text" suggestFields="orgNum,orgName" suggestUrl="demo/database/db_lookupSuggest.html" lookupGroup="org" suffix="[]"/>
+				<a class="btnLook" href="demo/database/dwzOrgLookup.html" lookupGroup="org" suffix="[]">查找带回</a>		
+				<span class="info">需要suffix="[]"属性，下标一般用于主从结构子表</span>
+			</dd>
+		</dl>
+		
+		<div class="divider"></div>
+		<dl class="nowrap">
+			<dt>部门（中间带下标）：</dt>
+			<dd>
+				<input name="org[].id" value="1" type="hidden"/>
+				<input class="required" name="org[].orgName" value="技术部" type="text" suggestFields="orgNum,orgName" suggestUrl="demo/database/db_lookupSuggest.html" lookupGroup="org[]"/>
+				<a class="btnLook" href="demo/database/dwzOrgLookup.html" lookupGroup="org[]">查找带回</a>		
+				<span class="info">不需要suffix="[]"属性，lookupGroup属性中加上方括号[]</span>
+			</dd>
+		</dl>
+		
+		<div class="divider"></div>
+		<dl class="nowrap">
+			<dt>自定义lookupPk：</dt>
+			<dd>
+				<input name="obj.orgNum" value="" type="hidden"/>
+				<input class="required" name="obj.orgName" type="text" suggestFields="orgNum,orgName" suggestUrl="demo/database/db_lookupSuggest.html" lookupGroup="obj" lookupPk="orgNum"/>
+				<a class="btnLook" href="demo/database/dwzOrgLookup.html" lookupGroup="obj" lookupPk="orgNum">查找带回</a>	
+				<span class="info">自定义lookup主键，只需添加lookupPk="xxx"属性（lookupPk默认值为id）</span>
+			</dd>
+		</dl>
+		
+		<div class="divider"></div>
+		
+		<dl class="nowrap">
+			<dt>附件：</dt>
+			<dd>
+				<input name="attachment.id" value="" type="hidden">
+				<input class="readonly" name="attachment.fileName" value="" readonly="readonly" type="text"/>
+				<a class="btnAttach" href="demo/database/db_attachmentLookup.html" lookupGroup="attachment" width="560" height="300" title="附件">附件</a>
+				<span class="info">(lookup附件)</span>
+			</dd>
+		</dl>*@
+
+            <div class="divider"></div>
+            <h3 class="contentTitle">单据详情</h3>
+            <div class="tabs">
+                <div class="tabsHeader">
+                    <div class="tabsHeaderContent">
+                        <ul>
+                            <li class="selected"><a href="javascript:void(0)"><span>添加详情</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabsContent" style="height: 200px;">
+                    <div>
+                        <table class="list nowrap itemDetail" addbutton="添加条目" width="100%">
+                            <thead>
+                                <tr>
+                                    <th type="lookup" name="items[#index#].book.Name"
+                                        lookupgroup="items[#index#].book"
+                                        @*lookupurl="demo/database/dwzOrgLookup.html"*@
+                                        suggesturl="/Stock/In/getjson2"
+                                        suggestfields="Name"
+                                        postfield="keywords" size="12" fieldclass="required">书籍名称</th>
+                                    <th type="text" name="items[#index#].book.ID" defaultval="#index#" size="12" fieldclass="digits">书籍ID</th>
+                                    <th type="text" name="items[#index#].book.Price" defaultval="0.8" size="12" fieldclass="number">价格</th>
+                                    <th type="text" name="items[#index#].book.Num" defaultval="#index#" size="12" fieldclass="digits">数量</th>
+                                    <th type="text" name="items[#index#].book.Discount" defaultval="0.8" size="12" fieldclass="number">折扣</th>
+                                    @*<th type="date" name="items[#index#].itemDate" defaultval="2011-12-28" size="12">日期</th>*@
+                                    <th type="del" width="60">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tabsFooter">
+                    <div class="tabsFooterContent"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="formBar">
+            <ul>
+                <li>
+                    <div class="buttonActive">
+                        <div class="buttonContent">
+                            <button type="submit">保存</button></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
+                        <div class="buttonContent">
+                            <button class="close" type="button">关闭</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</form>

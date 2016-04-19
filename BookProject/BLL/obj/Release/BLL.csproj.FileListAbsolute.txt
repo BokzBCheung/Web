@@ -1,0 +1,13 @@
+D:\ClassFiles\Web\Class02\BLL\bin\Release\BLL.dll
+D:\ClassFiles\Web\Class02\BLL\bin\Release\BLL.pdb
+D:\ClassFiles\Web\Class02\BLL\bin\Release\DAL.dll
+D:\ClassFiles\Web\Class02\BLL\bin\Release\Maticsoft.Common.dll
+D:\ClassFiles\Web\Class02\BLL\bin\Release\MODEL.dll
+D:\ClassFiles\Web\Class02\BLL\bin\Release\Book.DBUtility.dll
+D:\ClassFiles\Web\Class02\BLL\bin\Release\System.Data.SQLite.dll
+D:\ClassFiles\Web\Class02\BLL\bin\Release\MySql.Data.dll
+D:\ClassFiles\Web\Class02\BLL\bin\Release\DAL.pdb
+D:\ClassFiles\Web\Class02\BLL\bin\Release\MODEL.pdb
+D:\ClassFiles\Web\Class02\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web\Class02\BLL\obj\Release\BLL.dll
+D:\ClassFiles\Web\Class02\BLL\obj\Release\BLL.pdb

@@ -1,0 +1,281 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>书籍管理后台管理</title>
+
+    <link href="/content/j-ui/themes/default/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/content/j-ui/themes/css/core.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/content/j-ui/themes/css/print.css" rel="stylesheet" type="text/css" media="print" />
+    <link href="/content/j-ui/uploadify/css/uploadify.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--[if IE]>
+<link href="/content/j-ui/themes/css/ieHack.css" rel="stylesheet" type="text/css" media="screen"/>
+<![endif]-->
+
+    <!--[if lte IE 9]>
+<script src="/content/j-ui/js/speedup./content/j-ui/js" type="text/javascript"></script>
+<![endif]-->
+
+    <script src="/content/j-ui/js/jquery-1.7.2.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/jquery.validate.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/jquery.bgiframe.js" type="text/javascript"></script>
+    <script src="/content/j-ui/xheditor/xheditor-1.2.1.min.js" type="text/javascript"></script>
+    <script src="/content/j-ui/xheditor/xheditor_lang/zh-cn.js" type="text/javascript"></script>
+    <script src="/content/j-ui/uploadify/scripts/jquery.uploadify.js" type="text/javascript"></script>
+
+    <!-- svg图表  supports Firefox 3.0+, Safari 3.0+, Chrome 5.0+, Opera 9.5+ and Internet Explorer 6.0+ -->
+    <script type="text/javascript" src="/content/j-ui/chart/raphael.js"></script>
+    <script type="text/javascript" src="/content/j-ui/chart/g.raphael.js"></script>
+    <script type="text/javascript" src="/content/j-ui/chart/g.bar.js"></script>
+    <script type="text/javascript" src="/content/j-ui/chart/g.line.js"></script>
+    <script type="text/javascript" src="/content/j-ui/chart/g.pie.js"></script>
+    <script type="text/javascript" src="/content/j-ui/chart/g.dot.js"></script>
+
+    <script src="/content/j-ui/js/dwz.core.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.util.date.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.validate.method.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.regional.zh.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.barDrag.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.drag.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.tree.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.accordion.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.ui.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.theme.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.switchEnv.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.alertMsg.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.contextmenu.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.navTab.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.tab.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.resize.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.dialog.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.dialogDrag.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.sortDrag.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.cssTable.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.stable.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.taskBar.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.ajax.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.pagination.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.database.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.datepicker.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.effects.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.panel.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.checkbox.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.history.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.combox.js" type="text/javascript"></script>
+    <script src="/content/j-ui/js/dwz.print.js" type="text/javascript"></script>
+    <!--
+<script src="bin/dwz.min./content/j-ui/js" type="text/javascript"></script>
+-->
+    <script src="/content/j-ui/js/dwz.regional.zh.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            DWZ.init("/content/dwz.frag.xml", {
+                loginUrl: "login_dialog.html", loginTitle: "登录",	// 弹出登录对话框
+                //		loginUrl:"login.html",	// 跳到登录页面
+                statusCode: { ok: 200, error: 300, timeout: 301 }, //【可选】
+                pageInfo: { pageNum: "pageNum", numPerPage: "numPerPage", orderField: "orderField", orderDirection: "orderDirection" }, //【可选】
+                debug: false,	// 调试模式 【true|false】
+                callback: function () {
+                    initEnv();
+                    $("#themeList").theme({ themeBase: "/content/j-ui/themes" }); // themeBase 相对于index页面的主题base路径
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body scroll="no">
+    <div id="layout">
+        <div id="header">
+            <div class="headerNav">
+                <div style="width:100%;position:relative;text-align:center;font-family:'Microsoft YaHei';font-size:25px;color:white;line-height:50px;">图书网络管理系统</div>
+                <ul class="nav">
+                    <li><a href="/Dic/User/AddUser" target="dialog" width="600">修改密码</a></li>
+                    <li><a href="login.html">退出</a></li>
+                </ul>
+                <ul class="themeList" id="themeList">
+                    <li theme="default">
+                        <div class="selected">蓝色</div>
+                    </li>
+                    <li theme="green">
+                        <div>绿色</div>
+                    </li>
+                    <!--<li theme="red"><div>红色</div></li>-->
+                    <li theme="purple">
+                        <div>紫色</div>
+                    </li>
+                    <li theme="silver">
+                        <div>银色</div>
+                    </li>
+                    <li theme="azure">
+                        <div>天蓝</div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- navMenu -->
+
+        </div>
+
+        <div id="leftside">
+            <div id="sidebar_s">
+                <div class="collapse">
+                    <div class="toggleCollapse">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="toggleCollapse">
+                    <h2>主菜单</h2>
+                    <div>收缩</div>
+                </div>
+
+                <div class="accordion" fillspace="sidebar">
+                    <div class="accordionHeader">
+                        <h2><span>Folder</span>字典维护</h2>
+                    </div>
+                    <div class="accordionContent">
+                        <ul class="tree treeFolder">
+                            <li><a href="Dic_Book/List" target="navTab" rel="BookList" fresh="true">图书信息</a></li>
+                            <li><a href="/DIC/Guest/List" target="navTab" rel="GuestList" fresh="true">客户信息</a></li>
+                            <li><a href="/DIC/Supplier/List" target="navTab" rel="supplier" fresh="true">供应商信息</a></li>
+                            <li><a href="/DIC/User/List" target="navTab" rel="UserList" fresh="true">用户信息</a></li>
+                        </ul>
+                    </div>
+                    <div class="accordionHeader">
+                        <h2><span>Folder</span>图书批销</h2>
+                    </div>
+                    <div class="accordionContent">
+                        <ul class="tree treeFolder @*treeCheck*@">
+                            @*<li><a href="javascript:;">收订管理</a>
+                                <ul>
+                                    <li><a href="Dictionary/BookIfo" target="navTab" rel="Luru">收订录入</a></li>
+                                    <li><a href="Dictionary/BookIfo" target="navTab" rel="ChaXun">收订查询</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Dictionary/BookIfo" target="navTab" rel="demo_page2">报订管理</a>
+                                <ul>
+                                    <li><a href="javascript:;">报订录入</a></li>
+                                    <li><a href="javascript:;">报订查询</a></li>
+                                </ul>
+                            </li>*@
+                            <li><a href="#" rel="demo_page3">批销入库</a>
+                                <ul>
+                                    <li><a href="/Stock/In/Add" target="navTab" rel="InAdd" fresh="true">入库录入</a></li>
+                                    <li><a href="/Stock/In/List" target="navTab" rel="InList" fresh="true">入库查询</a></li>
+                                    <li><a href="/Stock/In/Report" target="navTab" rel="RepList" fresh="true">库存显示</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#" rel="demo_page4">批销出库</a>
+                                <ul>
+                                    <li><a href="javascript:;">出库录入</a></li>
+                                    <li><a href="javascript:;">出库查询</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">图书收退</a>
+                                <ul>
+                                    <li><a href="javascript:;">收退录入</a></li>
+                                    <li><a href="javascript:;">收退查询</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">图书赠送</a>
+                                <ul>
+                                    <li><a href="javascript:;">赠送录入</a></li>
+                                    <li><a href="javascript:;">赠送查询</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">图书折损</a>
+                                <ul>
+                                    <li><a href="javascript:;">折损录入</a></li>
+                                    <li><a href="javascript:;">折损查询</a></li>
+                                </ul>
+                            </li>
+     
+                            <li><a href="javascript:;">款项管理</a>
+                                <ul>
+                                    <li><a href="javascript:;">款项录入</a></li>
+                                    <li><a href="javascript:;">款项查询</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="accordionHeader">
+                        <h2><span>Folder</span>图书零售</h2>
+                    </div>
+                    <div class="accordionContent">
+                        <ul class="tree treeFolder">
+                            <li><a href="Dictionary/BookIfo" target="dialog" rel="dlg_page">图书内转</a>
+                                <ul>
+                                    <li><a href="javascript:;">内转录入</a></li>
+                                    <li><a href="javascript:;">内转查询</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Dictionary/BookIfo" target="dialog" rel="dlg_page2">零售出库</a>
+                                <ul>
+                                    <li><a href="javascript:;">出库录入</a></li>
+                                    <li><a href="javascript:;">出库查询</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="navTab" class="tabsPage">
+                <div class="tabsPageHeader">
+                    <div class="tabsPageHeaderContent">
+                        <!-- 显示左右控制时添加 class="tabsPageHeaderMargin" -->
+                        <ul class="navTab-tab">
+                            <li tabid="main" class="main"><a href="javascript:;"><span><span class="home_icon">我的主页</span></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="tabsLeft">left</div>
+                    <!-- 禁用只需要添加一个样式 class="tabsLeft tabsLeftDisabled" -->
+                    <div class="tabsRight">right</div>
+                    <!-- 禁用只需要添加一个样式 class="tabsRight tabsRightDisabled" -->
+                    <div class="tabsMore">more</div>
+                </div>
+                <ul class="tabsMoreList">
+                    <li><a href="javascript:;">我的主页</a></li>
+                </ul>
+                <div class="navTab-panel tabsPageContent layoutBox">
+                    <div class="page unitBox">
+                        <div class="accountInfo">
+                            <h2 style="text-align: center; padding-top: 20px;">欢迎您进入后台管理系统</h2>
+                        </div>
+                        <div class="pageFormContent" width="100%">
+                            <img src="~/Content/themes/img/BackGround.gif" width="100%" height="500px;" />
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">Copyright &copy; 2010 <a href="demo_page2.html" target="dialog">Capricornus团队</a> 京ICP备05019125号-10</div>
+
+    <!-- 注意此处/content/j-ui/js代码用于google站点统计，非DWZ代码，请删除 -->
+    @*<script src="~/Scripts/jquery-1.7.1.min.js"></script>*@
+    <script type="text/javascript">
+
+  
+    </script>
+
+</body>
+</html>

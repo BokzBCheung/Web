@@ -1,0 +1,71 @@
+﻿@{
+    Layout = null;
+    MODEL.T_DIC_User user = ViewBag.lst;
+}
+
+<div class="pageContent">
+    <form method="post" action="/Dic/User/EditUserSave" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+        <div class="pageFormContent" layouth="56">
+            <p>
+                <label>登陆名称：</label>
+                <input name="ID" type="hidden" size="30" value="@user.ID" class="required"  alt="请修改登录名称"/>
+                <input name="LoginName" type="text" size="30" value="@user.LoginName" class="required"  alt="请修改登录名称"/>
+                <input name="LastLoginTime" class="required" type="hidden" size="30" value="@System.DateTime.Now" alt="请修改最后登录时间"/>
+                <input name="VisitCount" class="required" type="hidden" size="30" value="3" alt="请修改访问统计" />
+            </p>
+            <p>
+                <label>密码：</label>
+                <input name="Pwd" type="text" size="30" value="@user.Pwd" class="required"  alt="请修改登录密码"/>
+            </p>
+            <p>
+                <label>电话：</label>
+                <input name="Phone" class="required" type="text" size="30" value="@user.Phone" alt="请输入电话"/>
+            </p>
+            <p>
+                <label>账户状态：</label>
+                @*<input name="Status" class="required" type="text" size="30" value="50" alt="请输入"/>*@
+                <select name="Status" class="required combox">
+                    @if (@user.Status == 1)
+                    { 
+                        <option value="1" selected="selected">正常</option>
+                        <option value="2">冻结</option>
+                        <option value="3">删除</option>
+                    }
+                    else if(@user.Status==2)
+                    {
+                        <option value="1" >正常</option>
+                        <option value="2" selected="selected">冻结</option>
+                        <option value="3">删除</option>
+                    }
+                    else
+                    {
+                        <option value="1" >正常</option>
+                        <option value="2">冻结</option>
+                        <option value="3" selected="selected">删除</option>
+                    }
+                </select>
+            </p>
+
+        </div>
+        <div class="formBar">
+            <ul>
+                <!--<li><a class="buttonActive" href="javascript:;"><span>保存</span></a></li>-->
+                <li>
+                    <div class="buttonActive">
+                        <div class="buttonContent">
+                            <button type="submit">保存</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
+                        <div class="buttonContent">
+                            <button type="button" class="close">取消</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>
+

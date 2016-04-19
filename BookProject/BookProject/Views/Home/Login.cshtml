@@ -1,0 +1,162 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <title>登录</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link rel="shortcut icon" href="/Content/image/favicon.ico" />
+    <script src="~/Scripts/bootstrap/jquery-1.10.1.min.js"></script>
+    <script src="~/Scripts/bootstrap/noty/jquery.noty.js"></script>
+    <script src="~/Scripts/bootstrap/noty/layouts/topCenter.js"></script>
+    <script src="~/Scripts/bootstrap/noty/themes/default.js"></script>
+    <style>
+        * {
+            padding:0;margin:0;list-style-type:none;text-decoration:none;
+        }
+        body {
+            background-color:rgba(1, 77, 103, 0.92);
+        }
+        .logo {
+            text-align:center;
+            padding:80px 0 20px 0;
+
+        }
+        .content {
+            text-align:center;
+            color:#FFF;
+        }
+        .form-group {
+            margin-top:30px;
+            
+        }
+        .form-control {
+            padding:8px 5px;
+            width:240px;
+        }
+        .form-actions {
+            padding-top:40px;
+            text-align:center;
+        }
+        .form-actions .btnLogin {
+            display:block;
+            border:0;
+            background-color:#336;
+            color:#FFF;
+            width:180px;
+            margin:0 auto;
+            padding:10px 0;
+            cursor:pointer;
+            font-size:16px;
+        }
+        .footer {
+            position:fixed;
+            bottom:5px;
+            font-size:14px;
+            text-align:center;
+            width:100%;
+            color:#CCC;
+        }
+    </style>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body>
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <a>
+            <img src="~/Content/themes/img/avatar2.jpg" />
+        </a>
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN LOGIN -->
+    <div class="content">
+        <!-- BEGIN LOGIN FORM -->
+            <h3 class="form-title">登录到你的帐户</h3>
+            <div class="form-group">
+                <span class="control-label">用户ID</span>
+                <input type="text" class="form-control" placeholder="请输入用户ID" id="userID" name="userID" value="张博"/>
+            </div>
+            <div class="form-group">
+                <span class="control-label">　密码</span>
+                <input type="password" class="form-control placeholder-no-fix wid300" placeholder="请输入密码" id="password" name="password" value="123" />
+            </div>
+            
+            <div class="form-actions">
+                <a class="btnLogin">登录</a>
+
+            </div>
+        <!-- END LOGIN FORM -->
+    </div>
+
+    <div class="footer"><p>Capricornus团队京ICP备05019125号-10</p></div>
+    <script>
+        var ckUser = "ckUser";
+        var ckPwd = "ckPwd";
+        $(function () {
+
+            document.onkeydown = function (event) {
+                var e = event || window.event || arguments.callee.caller.arguments[0];
+                if (e && e.keyCode == 13) { // enter 键
+                    if ($("#userID").val().trim() == "") {
+                        $("#userID").focus();
+                    }
+                    else if ($("#password").val().trim() == "") {
+                        $("#password").focus();
+                    }
+                    else {
+                        $(".btnLogin").trigger("click");
+                    }
+                }
+            };
+
+            $(".btnLogin").bind("click", function () {
+
+                var userID = $("#userID").val();
+                var password = $("#password").val();
+                if (userID.trim() == "") {
+                    noty({ text: "请输入用户ID！", type: "warning", layout: "topCenter", timeout: 1500 });
+                    return;
+                }
+                if (password.trim() == "") {
+                    noty({ text: "请输入密码！", type: "warning", layout: "topCenter", timeout: 1500 });
+                    return;
+                }
+                $.ajax({
+                    url: "/Home/btnLogin",
+                    type: "POST",
+                    data: { userID: userID, password: password },
+                    dataType: "json",
+                    success: function (data) {
+                        if (data == 0) {
+                            window.location.href = "/Home/Index"; 
+                        }
+                        else {
+                            //noty({ text: result.msg, type: "warning", layout: "topCenter", timeout: 1500 })
+                            alert("密码输入有误，请重新输入！");
+                        }
+                    },
+                    error: function () {
+
+                    }
+                });
+
+            });
+        });
+
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null)
+                return unescape(r[2]);
+            return null;
+        }
+    </script>
+</body>
+<!-- END BODY -->
+</html>

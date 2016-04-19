@@ -1,0 +1,5 @@
+D:\ClassFiles\Web\Class02\MODEL\bin\Release\MODEL.dll
+D:\ClassFiles\Web\Class02\MODEL\bin\Release\MODEL.pdb
+D:\ClassFiles\Web\Class02\MODEL\obj\Release\MODEL.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web\Class02\MODEL\obj\Release\MODEL.dll
+D:\ClassFiles\Web\Class02\MODEL\obj\Release\MODEL.pdb

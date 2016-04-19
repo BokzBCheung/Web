@@ -1,0 +1,46 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="pageContent">
+    <form method="post" action="/Home/ChangePwdSave" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+        <div class="pageFormContent" layouth="56">
+            <p>
+                <label>密码：</label>
+                <input name="Pwd" type="text" size="30" value="" class="required" alt="请修改登录密码" />
+                <p>
+                    <label>确认密码：</label>
+                    <input name="SurPwd" type="text" size="30" value="" class="required" alt="请确认登录密码" />
+                </p>
+            </p>
+
+        </div>
+        <div class="formBar">
+            <ul>
+                <!--<li><a class="buttonActive" href="javascript:;"><span>保存</span></a></li>-->
+                <li>
+                    <div class="buttonActive">
+                        <div class="buttonContent">
+                            <button type="submit" onclick="myfunction()">保存</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
+                        <div class="buttonContent">
+                            <button type="button" class="close">取消</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>
+
+<script language="javascript">  
+    function myfunction(){
+        setTimeout("location.href='/home/login';", 2000);  
+    }
+
+</script> 
+

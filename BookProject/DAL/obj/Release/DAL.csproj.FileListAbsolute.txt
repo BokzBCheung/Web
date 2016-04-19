@@ -1,0 +1,10 @@
+D:\ClassFiles\Web\Class02\DAL\bin\Release\DAL.dll
+D:\ClassFiles\Web\Class02\DAL\bin\Release\DAL.pdb
+D:\ClassFiles\Web\Class02\DAL\bin\Release\Book.DBUtility.dll
+D:\ClassFiles\Web\Class02\DAL\bin\Release\MODEL.dll
+D:\ClassFiles\Web\Class02\DAL\bin\Release\System.Data.SQLite.dll
+D:\ClassFiles\Web\Class02\DAL\bin\Release\MySql.Data.dll
+D:\ClassFiles\Web\Class02\DAL\bin\Release\MODEL.pdb
+D:\ClassFiles\Web\Class02\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web\Class02\DAL\obj\Release\DAL.dll
+D:\ClassFiles\Web\Class02\DAL\obj\Release\DAL.pdb

@@ -1,0 +1,13 @@
+G:\Web案例开发\Class02\MODEL\bin\Debug\MODEL.dll
+G:\Web案例开发\Class02\MODEL\bin\Debug\MODEL.pdb
+G:\Web案例开发\Class02\MODEL\obj\Debug\MODEL.dll
+G:\Web案例开发\Class02\MODEL\obj\Debug\MODEL.pdb
+D:\ClassFiles\Web案例开发\Class02\MODEL\bin\Debug\MODEL.dll
+D:\ClassFiles\Web案例开发\Class02\MODEL\bin\Debug\MODEL.pdb
+D:\ClassFiles\Web案例开发\Class02\MODEL\obj\Debug\MODEL.dll
+D:\ClassFiles\Web案例开发\Class02\MODEL\obj\Debug\MODEL.pdb
+D:\ClassFiles\Web\Class02\MODEL\bin\Debug\MODEL.dll
+D:\ClassFiles\Web\Class02\MODEL\bin\Debug\MODEL.pdb
+D:\ClassFiles\Web\Class02\MODEL\obj\Debug\MODEL.dll
+D:\ClassFiles\Web\Class02\MODEL\obj\Debug\MODEL.pdb
+D:\ClassFiles\Web\Class02\MODEL\obj\Debug\MODEL.csprojResolveAssemblyReference.cache

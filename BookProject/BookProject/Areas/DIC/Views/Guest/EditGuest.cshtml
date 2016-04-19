@@ -1,0 +1,51 @@
+﻿@{
+    Layout = null;
+    MODEL.T_DIC_Guest guest = ViewBag.lst;
+}
+
+<div class="pageContent">
+	<form method="post" action="/Dic/Guest/EditGuestSave" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone)">
+		<div class="pageFormContent" layoutH="56">
+			<p>
+				<label>编码：</label>
+                <input name="ID" type="hidden" size="30" value="@guest.ID"  alt="携带ID"/>
+				<input name="Coding" type="text" size="30" value="@guest.Coding" class="required"  alt="请修改编码"/>
+			</p>
+			<p>
+				<label>联系人：</label>
+				<input name="Contact" class="required" type="text" size="30" value="@guest.Contact" alt="请修改联系人"/>
+			</p>
+            <p>
+				<label>联系电话：</label>
+				<input name="Phone" class="required" type="text" size="30" value="@guest.Phone" alt="请修改联系电话"/>
+			</p>
+            <p>
+				<label>单位名称：</label>
+				<input name="NameEntity" @*class="required"*@ type="text" size="30" value="@guest.NameEntity" alt="请修改单位名称"/>
+			</p>
+            <p>
+				<label>单位地址：</label>
+				<input name="AddressEntity" @*class="required"*@ type="text" size="30" value="@guest.AddressEntity" alt="请修改单位地址"/>
+			</p>
+             <p>
+				<label>账户：</label>
+				<input name="Account" class="required" type="text" size="30" value="@guest.Account" alt="请修改账户"/>
+			</p>
+            <p>
+				<label>电子信箱：</label>
+				<input name="Mail" class="required" type="text" size="30" value="@guest.Mail" alt="请修改电子信箱"/>
+			</p>
+			
+		</div>
+		<div class="formBar">
+			<ul>
+				<!--<li><a class="buttonActive" href="javascript:;"><span>保存</span></a></li>-->
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>
+				<li>
+					<div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div>
+				</li>
+			</ul>
+		</div>
+	</form>
+</div>
+

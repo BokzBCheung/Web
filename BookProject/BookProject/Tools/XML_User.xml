@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<User>
+  <LastID>22</LastID>
+  <!--//自增设计-->
+  <Person ID="1">
+    <LoginName>张博</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>15258789532</Phone>
+    <LastLoginTime>2015-12.28 00:00:00</LastLoginTime>
+    <VisitCount>1</VisitCount>
+    <Status>0</Status>
+  </Person>
+  <Person ID="2">
+    <LoginName>测试员</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>15258789532</Phone>
+    <LastLoginTime>2015-12.28 00:00:00</LastLoginTime>
+    <VisitCount>2</VisitCount>
+    <Status>1</Status>
+  </Person>
+  <Person ID="3">
+    <LoginName>测试</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>15258789532</Phone>
+    <LastLoginTime>2015-12.28 00:00:00</LastLoginTime>
+    <VisitCount>2</VisitCount>
+    <Status>2</Status>
+  </Person>
+  <Person ID="4">
+    <LoginName>测试</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>15258789532</Phone>
+    <LastLoginTime>2015-12.28 00:00:00</LastLoginTime>
+    <VisitCount>2</VisitCount>
+    <Status>2</Status>
+  </Person>
+  <Person ID="5">
+    <LoginName>测试</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>15258789532</Phone>
+    <LastLoginTime>2015-12.28 00:00:00</LastLoginTime>
+    <VisitCount>2</VisitCount>
+    <Status>2</Status>
+  </Person>
+  <Person ID="6">
+    <LoginName>测试</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>15258789532</Phone>
+    <LastLoginTime>2015-12.28 00:00:00</LastLoginTime>
+    <VisitCount>2</VisitCount>
+    <Status>2</Status>
+  </Person>
+  <Person ID="7">
+    <LoginName>趣味</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>去唔去厄齐</Phone>
+    <LastLoginTime>2015-12-30</LastLoginTime>
+    <VisitCount>3</VisitCount>
+    <Status>1</Status>
+  </Person>
+  <Person ID="8">
+    <LoginName>测试修改</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>152587859532</Phone>
+    <LastLoginTime>2015/12/30 1:54:32</LastLoginTime>
+    <VisitCount>3</VisitCount>
+    <Status>2</Status>
+  </Person>
+  <Person ID="10">
+    <LoginName>测试删除</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>12556457895</Phone>
+    <LastLoginTime>2015-12-30</LastLoginTime>
+    <VisitCount>3</VisitCount>
+    <Status>1</Status>
+  </Person>
+  <Person ID="18">
+    <LoginName>发送</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>高管</Phone>
+    <LastLoginTime>2016-01-04</LastLoginTime>
+    <VisitCount>3</VisitCount>
+    <Status>1</Status>
+  </Person>
+  <Person ID="19">
+    <LoginName>是打发</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>sda </Phone>
+    <LastLoginTime>2016-01-04</LastLoginTime>
+    <VisitCount>3</VisitCount>
+    <Status>1</Status>
+  </Person>
+  <Person ID="20">
+    <LoginName>是打发</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>爱妃啊</Phone>
+    <LastLoginTime>2016-01-04</LastLoginTime>
+    <VisitCount>3</VisitCount>
+    <Status>1</Status>
+  </Person>
+  <Person ID="21">
+    <LoginName>士大夫撒</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>撒地方</Phone>
+    <LastLoginTime>2016-01-04</LastLoginTime>
+    <VisitCount>3</VisitCount>
+    <Status>1</Status>
+  </Person>
+  <Person ID="22">
+    <LoginName>大方</LoginName>
+    <Pwd>123</Pwd>
+    <Phone>as发生地方</Phone>
+    <LastLoginTime>2016-01-04</LastLoginTime>
+    <VisitCount>3</VisitCount>
+    <Status>1</Status>
+  </Person>
+</User>

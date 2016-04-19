@@ -1,0 +1,5 @@
+D:\ClassFiles\Web\Class02\DBUtility\bin\Release\Book.DBUtility.dll
+D:\ClassFiles\Web\Class02\DBUtility\bin\Release\MySql.Data.dll
+D:\ClassFiles\Web\Class02\DBUtility\bin\Release\System.Data.SQLite.DLL
+D:\ClassFiles\Web\Class02\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
+D:\ClassFiles\Web\Class02\DBUtility\obj\Release\Book.DBUtility.dll
